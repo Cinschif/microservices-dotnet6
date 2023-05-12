@@ -18,7 +18,7 @@ public class PersonController : ControllerBase
         _personService = personService;
     }
 
-    [HttpGet("find all")]
+    [HttpGet()]
     public IActionResult Get ()
     {
         return Ok(_personService.FindAll());
