@@ -40,27 +40,7 @@ internal class Program
         .AddAspNetCoreInstrumentation()
            );
 
-        //void ConfigureResource(ResourceBuilder r) => r.AddService(
-        //       serviceName: builder.Configuration.GetValue("ServiceName", "BackOtel"),
-        //       serviceVersion: Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "unknown",
-        //       serviceInstanceId: Environment.MachineName);
-
-        //var resourceBuilder = ResourceBuilder.CreateDefault();
-        //ConfigureResource(resourceBuilder);
-
-        //builder.Services.AddOpenTelemetry()
-        //            .ConfigureResource(ConfigureResource)
-        //            .WithTracing(tracerProviderBuilder =>
-        //            {
-        //                tracerProviderBuilder
-        //                    .SetResourceBuilder(resourceBuilder)
-        //                    .AddHttpClientInstrumentation()                             
-        //                    .AddOtlpExporter(opt =>
-        //                    {
-        //                        opt.Endpoint = new Uri("http://localhost:4317/v1/traces");
-        //                        opt.Headers = $"Authorization={Environment.GetEnvironmentVariable("0bf164a69482b4413540083180aca560ce84NRAL")}";
-        //                    });
-        //            }).StartWithHost();
+        
 
         // Add services to the container.
 
