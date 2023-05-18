@@ -30,7 +30,7 @@ internal class Program
             tracerProviderBuilder.AddOtlpExporter(opt =>
             {
                 opt.Endpoint = new Uri("http://localhost:4317/v1/traces");
-                opt.Headers = $"Authorization={Environment.GetEnvironmentVariable("0bf164a69482b4413540083180aca560ce84NRAL")}";
+                opt.Headers = $"Authorization={Environment.GetEnvironmentVariable("YOUR-API-KEY")}";
             })
              .AddSource(serviceName)
              .SetResourceBuilder(
